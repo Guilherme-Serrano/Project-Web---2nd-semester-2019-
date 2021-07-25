@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Agendamento</title>
+		<link rel="shortcut icon" href="../../imagens/bigode-com-barba.svg">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="agendar.css">
+		<script src="agendar.js"></script>	
+
+	</head>
+
+	<body class="text-center">
+
+		<header>
+
+			<nav class="container navbar  navbar-light fixed-top bg-light rounded navbar-expand-sm ">
+				<link class= "navbar-" rel="shortcut icon" href="../../imagens/bigode-com-barba.svg">
+				<a class="navbar-brand" href="../user.html"><img src="../../imagens/bigode-com-barba.svg"  alt="" width="40" height="40"></img>Zezé Barbershop</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon" ></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+				  <ul class="navbar-nav mr-auto">
+				  </ul>
+				  <form class="form-inline mt-2 mt-md-0">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="../servicos/servico_user.html">Serviços <span class="sr-only">(current)</span></a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link disabled" href="../contato/contato_user.html" tabindex="-1" aria-disabled="true">Contatos</a>
+						  </li>
+					  </ul>
+					  <div class="btn-group" role="group" aria-label="Basic example">
+						<button type="button" class="btn btn-outline-success my-2 my-sm-0" onclick="window.location.href='../horario/horario.html'" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Seus Horários">User</button>
+						  <button type="button" class="btn btn-success my-2 my-sm-0" onclick="window.location.href='agendar.html'">Agendar</button>
+					 	  <button type="button" class="btn btn-outline-danger btn-sm my-2 my-sm-0" onclick="window.location.href='../index.html'"><img src="../../imagens/logout.png" alt="" width="14" height="14"></img></button>
+					</div>
+					  
+				  </form>
+				</div>
+			  </nav>			
+
+		</header>]
+
+		
+		<article class="container marketing bg-white rounded">
+				<div class="p-4 mb-3"><h2 class="font-italic">Agendar</h2>
+					<form class="row g-3">
+						<div class="col-md-6">
+						  <h5 for="inputEmail4" class="form-label">Escolha a data</h5>
+						  <div class="btn-group mb-3">
+							<select class="browser-default custom-select" id="dia" name="dia">
+								
+								<option value ="1">1</option>
+								<option value ="2">2</option>
+								<option value ="3">3</option>
+								<option value ="4">4</option>
+								<option value ="5">5</option>
+								<option value ="6">6</option>
+								<option value ="7">7</option>
+								<option value ="8">8</option>
+								<option value ="9">9</option>
+								<option value ="10">10</option>
+								<option value ="11">11</option>
+								<option value ="12">12</option>
+								<option value ="13">13</option>
+								<option value ="14">14</option>
+								<option value ="15">15</option>
+								<option value ="16">16</option>
+								<option value ="17">17</option>
+								<option value ="18">18</option>
+								<option value ="19">19</option>
+								<option value ="20">20</option>
+								<option value ="21">21</option>
+								<option value ="22">22</option>
+								<option value ="23">23</option>
+								<option value ="24">24</option>
+								<option value ="25">25</option>
+								<option value ="26">26</option>
+								<option value ="27">27</option>
+								<option value ="28">28</option>
+								<option value ="29">29</option>
+								<option value ="30">30</option>
+								<option value ="31">31</option>
+							  </select>
+							  <select class="browser-default custom-select" id="mes" name="mes">
+								
+								<option value ="01">Janeiro</option>
+								<option value ="02">Fevereiro</option>
+								<option value ="03">Março</option>
+								<option value ="04">Abril</option>
+								<option value ="05">Maio</option>
+								<option value ="06">Junho</option>
+								<option value ="07">Julho</option>
+								<option value ="08">Agosto</option>
+								<option value ="09">Setembro</option>
+								<option value ="10">Outubro</option>
+								<option value ="11">Novembro</option>
+								<option value ="12">Dezembro</option>
+							  </select>
+							  <select class="browser-default custom-select" id="ano" name="ano">
+								
+								<option value ="2020">2020</option>
+								<option value ="2021">2021</option>
+								<option value ="2022">2022</option>
+							  </select>
+							</div>
+						</div>
+						<div class="col-md-6">
+						  <label for="inputPassword4" class="form-label">Escolha a hora</label>
+						  <select class="browser-default custom-select" id="horario" name="horario">
+							
+							<option value ="8:00">8:00</option>
+							<option value ="9:00">9:00</option>
+							<option value ="10:00">10:00</option>
+							<option value ="11:00">11:00</option>
+							<option value ="12:00">12:00</option>
+							<option value ="13:00">13:00</option>
+							<option value ="14:00">14:00</option>
+							<option value ="15:00">15:00</option>
+							<option value ="16:00">16:00</option>
+							<option value ="17:00">17:00</option>
+							<option value ="18:00">18:00</option>
+							<option value ="19:00">19:00</option>
+							<option value ="20:00">20:00</option>
+						  </select>
+						</div>
+						<div class="col-12">
+						  <label for="inputAddress" class="form-label">Escolha o serviço que deseja agendar</label>
+						  <select class="browser-default custom-select" id="servico" name="servico">
+							
+							<option value ="Corte">Corte</option>
+							<option value ="Barba">Barba</option>
+							<option value ="Corte e Barba">Corte e Barba</option>
+							<option value ="Dia do noivo">Dia do noivo</option>	
+						  </select>
+						</div>
+						<div class="col-12">
+						  <label for="inputAddress2" class="form-label">Escolha um barbeiro para realizar o serviço</label>
+						  <select class="browser-default custom-select" id="profissional" name="profissional">
+							
+							<option value ="Afonso Jesus">Afonso Jesus</option>
+							<option value ="Fernando Miguel">Fernando Miguel</option>
+							<option value ="Gabriel de Paula">Gabriel de Paula</option>
+							<option value ="Mateus Navas">Mateus Navas</option>
+							<option value ="Renato Augusto">Renato Augusto</option>
+						  </select>
+						</div>
+					  </form>
+				<form id="bloco" class="form-inline p-3 mb-5 bg-white rounded">
+			  <div class="col-lg-4 mb-5">
+			  </div><!-- /.col-lg-4 -->
+			  <div class="col-lg-12">
+					<input type="button" class="btn btn-outline-success btn-lg d-grid gap-2 col-6 mx-auto" name="acao" value="Agendar" onclick="AGENDAR()"/>
+			</div><!-- /.col-lg-4 -->
+			</form>
+			</div>
+		
+
+			<footer id="rodape"></footer>
+
+		</article>
+
+	</body>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
+
